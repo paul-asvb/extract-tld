@@ -1,5 +1,5 @@
 import { ParseOptions } from './types.ts';
-import tlds from '../tlds.json';
+import tlds from '../tlds.json'  with { type: "json" };
 
 const parseUrl = (remoteUrl: string | URL, options?: ParseOptions) => {
   const combinedTlds = { ...tlds.icann, ...tlds.private };
