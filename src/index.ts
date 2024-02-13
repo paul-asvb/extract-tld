@@ -1,4 +1,4 @@
-import { ParseOptions } from './types';
+import { ParseOptions } from './types.ts';
 import tlds from '../tlds.json';
 
 const parseUrl = (remoteUrl: string | URL, options?: ParseOptions) => {
